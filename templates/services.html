@@ -1,0 +1,432 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    #mydiv{
+      background-image: url("{% static 'img/alt-services.jpg' %}");
+    }
+    #mydiv2{
+      background-image: url("{% static 'img/alt-services-2.jpg' %}");
+    }
+    #Breadcrumbs{
+      background-image: url("{% static 'img/breadcrumbs-bg.jpg' %}");
+    }
+  </style>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>UpConstruction Bootstrap Template - Services</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction
+  * Updated: Jan 09 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>UpConstruction<span>.</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{% url 'index' %}">Bosh sahifa</a></li>
+          <li><a href="{% url 'service' %}">Xizmatlar</a></li>
+          <li><a href="{% url 'projects' %}">Loyixalar</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="{% url 'contact' %}">Bog`lanish</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" id="Breadcrumbs">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>Xizmatlar</h2>
+        <ol>
+          <li><a href="{% url 'index' %}">Bosh sahifa</a></li>
+          <li>xizmatlar</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-mountain-city"></i>
+              </div>
+              <h3>Loyixalash va qurilish xizmatlar</h3>
+              <p>Biz har bir holatda eng yaxshi texnik echimlarni topib, qurilishda eng zamonaviy texnologiyalardan foydalanamiz.</p>
+              <a href="{% url 'service-details' %}" class="readmore stretched-link"><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+              </div>
+              <h3>Qurilish va montaj xizmatlar</h3>
+              <p>Turli xildagi montaj ishlari va qurilish ishlari.</p>
+              <a href="{% url 'service-details' %}" class="readmore stretched-link"><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <h3>Arxitekturaviy loyixalash</h3>
+              <p>Sizning binoyingizni boshdan oyoq loyixalab berish xizmatlari.</p>
+              <a href="{% url 'service-details' %}" class="readmore stretched-link"><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-trowel-bricks"></i>
+              </div>
+              <h3>Issiqlik va elekton loyixalash</h3>
+              <p>Electr toki va shunga o`xshash ishlarni qilish xizmatlari.</p>
+              <a href="{% url 'service-details' %}" class="readmore stretched-link"><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-helmet-safety"></i>
+              </div>
+              <h3>Ko`chmas mulkni obodonlashtirish</h3>
+              <p>Ko`chmas mulkingizni siz hohlagan holatda tamirlash xizmatlar</p>
+              <a href="{% url 'service-details' %}" class="readmore stretched-link"><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+              </div>
+              <h3>Qurilishda yordamchi xizmatlar</h3>
+              <p>Qurilishda yordamchi xizmatlar bo’yicha xizmatlar O'zbekiston bo'yichagi arzon narxlar va  yetakchi kompaniyalardan. </p>
+              <a href="{% url 'service-details' %}" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Servie Cards Section ======= -->
+
+    <!-- ======= Alt Services Section 2 ======= -->
+    <section id="alt-services-2" class="alt-services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3>Bizning ish faoliyatimiz</h3>
+            <p>Biz ishimizni eng yuqori sifatda bajaramiz va loyixa egasiga topshiramiz</p>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-easel flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Dizaynlash</a></h4>
+                <p>narsalar muhitini estetik va funksional sifatlarini shakllantirish maqsadiga qaratilgan loyihalash faoliyati turlarini ifodalovchi termin</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-patch-check flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Tekshirish</a></h4>
+                <p> Qo`llanma tadbirkorlik faoliyati yuritishning dolzarb masalalari yuzasidan tadbirkorlarga maslahat berish va ularning tekshirishlarga oid amaliy bilimlarini oshirishga qaratilgan. </p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Ko`rinish</a></h4>
+                <p>Albatta har bir narsaning ko`rinishi muxim. Biz hamma narsaga alohida qaraymiz.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Amalga oshirish</a></h4>
+                <p>Agar loyixa siz va bizga yoqsa sifat bilan qurib beramiz</p>
+              </div>
+            </div><!-- End Icon Box -->
+          </div>
+
+          <div class="col-lg-6 img-bg" data-aos="zoom-in" data-aos-delay="100" id="mydiv2"></div>
+        </div>
+
+      </div>
+    </section><!-- End Alt Services Section 2 -->
+
+    <!-- ======= Alt Services Section ======= -->
+    <section id="alt-services" class="alt-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-6 img-bg"  data-aos="zoom-in" data-aos-delay="100" id="mydiv"></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3>Qo`shimcha xizmatlarimiz</h3>
+            <p>Agar siz bizning hamkor bo`lsangiz biz sizga quyidagi xizmatlarni taqdim qilamiz.</p>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-easel flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Dizaynlash</a></h4>
+                <p>narsalar muhitini estetik va funksional sifatlarini shakllantirish maqsadiga qaratilgan loyihalash faoliyati turlarini ifodalovchi termin</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-patch-check flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Tekshirish</a></h4>
+                <p> Qo`llanma tadbirkorlik faoliyati yuritishning dolzarb masalalari yuzasidan tadbirkorlarga maslahat berish va ularning tekshirishlarga oid amaliy bilimlarini oshirishga qaratilgan. </p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Ko`rinish</a></h4>
+                <p>Albatta har bir narsaning ko`rinishi muxim. Biz hamma narsaga alohida qaraymiz.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Amalga oshirish</a></h4>
+                <p>Agar loyixa siz va bizga yoqsa sifat bilan qurib beramiz</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Alt Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Jamoadagilar</h2>
+          <p>Har bir insoning tajribasi va bilimiga qarab olinadi.</p>
+        </div>
+
+        <div class="slides-2 swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Arxitekt</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Arxitektura bo`yicha ancha yillardan beri shug`ullanadi. O`z ishining ustasi.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Dizayner</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Loyixaning chiroyli bo`lishini taminlaydi. Asosan ichki loyixalar bilan shug`ullanadi. 5 yillik ish tajribasi bor
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Biznes egasi</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Bu kampaniyaga 1991-yilda asos solgan. Hozirda o`z davrining eng yaxshi kampaniyalaridan biri.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Ish yurutuvchi</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Kampaniyani manfaatini koʻzlab ish yurituvchi shaxs. O`z ishining ustasi
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Tadbirkor</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Qurilish soxasida tadbirkorlik qiladi. O`zining bir qancha loyixalari bor. Barcha loyixalari yuqori reytingda baxolangan
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-8 col-md-4">
+            <div class="footer-info">
+              <h3>UpConstruction</h3>
+              <p>
+                Alisher Navoiy Ko`chasi <br>
+                11-uy, Uzbekiston<br><br>
+                <strong>Telefon:</strong> +998 91 234 56 78<br>
+                <strong>Email:</strong> email:@example.com<br>
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a href="https://twitter.com/" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                <a href="https://ru-ru.facebook.com/" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End footer info column-->
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
